@@ -5,14 +5,281 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miniprojecto</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <h1>Portafolio</h1>
-      <nav>
-        <a href="./index.html">Index</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./about.html">About</a>
-      </nav>
-  </body>
-</html>
+  <body class="bg-[#0D1117] text-white">
+<header class="relative flex h-24 items-center justify-between px-6 lg:px-12 ">
+  
+  <div class="z-10">
+    <img src="mobile/atom-svgrepo-com.svg" class="w-8" />
+  </div>
+
+  <nav class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 text-[10px] font-bold tracking-[0.2em] text-[#8892B0]">
+    <a href="#" class="hover:text-white">ABOUT ME</a>
+    <a href="#" class="hover:text-white">SKILLS</a>
+    <a href="#" class="hover:text-white">PROJECTS</a>
+  </nav>
+
+  <div class="hidden lg:flex z-10">
+    <a href="#" class="rounded-full border border-white/10 px-5 py-2 text-[10px] font-bold tracking-widest">
+      CONTACT
+    </a>
+  </div>
+
+    <button class="lg:hidden">
+    <img src="mobile/icon-hamburger.svg" alt="hamburguesa"/>
+  </button>
+</header>
+
+    <main>
+      <!-- Hero section-->
+      <section
+        class="relative min-h-screen bg-linear-to-t from-[#1E293B] to-[#0D1117] overflow-hidden px-6 pt-10 pb-20 lg:flex-col lg:items-center lg:justify-center"
+      >
+        <div class="flex flex-col items-center text-center">
+          <h1
+            class="max-w-85 text-4xl font-bold leading-tight lg:max-w-3xl lg:text-7xl"
+          >
+            I'm <span class="text-[#E3FF6A] italic">Samuel Cardenas</span>
+            <span
+              class="inline-block rounded-2xl border border-[#2B3650] px-4 py-2"
+              >Front-End</span
+            >
+            Developer
+          </h1>
+        </div>
+
+        <div class="flex justify-center relative">
+          <img
+            src="/mobile/me.2.png"
+            alt="me"
+            class="w-75 object-cover object-top drop-shadow-[0px_0px_100px_#E3FF6A] lg:w-100"
+          />
+          <button class="absolute bottom-10 left-1/2 -translate-x-1/2 rounded-full bg-[#E3FF6A] px-7 py-3 font-bold text-black whitespace-nowrap lg:px-8 lg:py-4 lg:text-3xl">
+    MY PROJECTS
+  </button>
+        </div>
+
+
+        <!-- LEFT CARD -->
+        <div
+          class="hidden lg:block absolute left-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 -rotate-5 text-2xl"
+        >
+          <h2>Client Review From Australia <span>5.0</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            voluptates.
+          </p>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div
+          class="hidden lg:block absolute right-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 rotate-5 text-2xl"
+        >
+          <h2>MY EXPERTISE</h2>
+          <div>
+            <p>Front-End ━━━━━━● <span class=" inline-block border border-gray-700">100%</span></p>
+          </div>
+          <div>
+            <p>English ━━━━━━━━● <span class=" inline-block border border-gray-700">100%</span></p>
+          </div>
+          <div>
+            <p>French ━━━━━●━━━ <span class=" inline-block border border-gray-700">50%</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO AM I -->
+   <section class="relative min-h-screen flex flex-col items-center justify-center bg-[#0D1117] px-6 py-24 overflow-hidden">
+  
+  <div class="hidden lg:block absolute top-32 left-[15%] w-36 -rotate-12">
+    <img src="/mobile/traje.jpeg" alt="Samuel 1" class="rounded-2xl drop-shadow-[-20px_-20px_20px_white]" />
+  </div>
+
+  <div class="hidden lg:block absolute bottom-32 left-[8%] w-64 rotate-[8deg] z-20">
+    <img src="/mobile/montaña.jpeg" alt="Samuel 2" class="rounded-3xl  drop-shadow-[0px_0px_30px_white]" />
+  </div>
+
+  <div class="hidden lg:block absolute top-1/2 right-[3%] w-72 -translate-y-1/2 rotate-[-15deg]">
+    <img src="/mobile/fogata.jpeg" alt="Samuel 3" class="rounded-3xl  drop-shadow-[-20px_-20px_20px_white] opacity-80" />
+  </div>
+
+  <div class="relative z-10 flex flex-col items-center text-center max-w-3xl space-y-10">
+    <h2 class="text-[#E3FF6A] text-6xl lg:text-8xl font-bold tracking-tighter">WHO AM I ?</h2>
+    
+    <div class="space-y-6 text-gray-400 text-lg lg:text-xl font-medium leading-relaxed px-4">
+      <p>I Am a full-stack website developer specialized in ReactJS. Plus, I also know some WordPress front-end development with Elementor and WooCommerce.</p>
+      <p>Programming is my passion, that's the reason I am working at the time of my academic career.</p>
+      <p>Additionally, I like to play PC games and read story-type books in my leisure time which is kinda fun and relaxing!</p>
+    </div>
+
+    <button class="bg-[#E3FF6A] text-black px-12 py-4 rounded-full font-extrabold tracking-[0.2em] transition-all hover:scale-110 text-xl">
+      SHOW MY PROJECTS
+    </button>
+  </div>
+
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-125 bg-[#E3FF6A]/5 blur-[120px] rounded-full z-0"></div>
+
+</section>
+
+      <!-- MY SKILLS -->
+ <section class="max-w-6xl mx-auto px-6 py-24">
+  <h2 class="text-center text-[#E3FF6A] text-5xl font-bold mb-16 tracking-tighter">MY SKILLS</h2>
+
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-6">
+    
+    <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/html-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+    <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/css-3-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/javascript-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/react-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="col-span-2 lg:col-span-1 lg:row-span-2 flex flex-col items-center justify-center rounded-3xl bg-[#1E293B] border border-white/10 p-8 text-center shadow-2xl">
+      <span class="text-7xl lg:text-8xl font-bold text-white">4</span>
+      <p class="text-[#8892B0] text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] mt-4 leading-tight">
+        Years<br>Experience<br>Working
+      </p>
+      <button class="mt-8 rounded-full bg-[#E3FF6A] px-6 py-2 text-[10px] font-bold text-black transition-transform hover:scale-105">
+        DOWNLOAD MY CV
+      </button>
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/next-js-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/node-js-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/tailwind-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
+      <img src="/mobile/mongodb-logo-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
+    </div>
+
+</section>
+
+
+
+<div class="max-w-6xl mx-auto px-6 pb-24">
+  <div class="rounded-4xl border border-white/5 bg-[#1E293B]/20 p-10 backdrop-blur-sm">
+    
+    <h3 class="text-center text-[#E3FF6A] text-[10px] lg:text-xs font-bold tracking-[0.4em] uppercase mb-12">
+      Additional Skills
+    </h3>
+
+    <div class="flex flex-wrap items-center justify-center gap-10 lg:gap-20">
+      
+      <img src="mobile/bootstrap-svgrepo-com.svg" alt="Bootstrap" class="h-7 lg:h-9 w-auto" />
+      
+      <img src="mobile/axios.svg" alt="Axios" class="h-5 lg:h-6 w-auto" />
+      
+      <img src="mobile/redux-svgrepo-com.svg" alt="Redux" class="h-7 lg:h-9 w-auto" />
+      
+      <img src="mobile/material-ui-svgrepo-com.svg" alt="Material UI" class="h-7 lg:h-9 w-auto" />
+      
+      <img src="mobile/firebase-svgrepo-com.svg" alt="Firebase" class="h-7 lg:h-9 w-auto" />
+      
+      <img src="mobile/wordpress-svgrepo-com.svg" alt="WordPress" class="h-7 lg:h-9 w-auto" />
+
+      <img src="mobile/framer-motion.svg" alt="Framer Motion" class="h-7 lg:h-9 w-auto" />
+
+
+    </div>
+  </div>
+</div>
+
+
+  <section class="max-w-7xl mx-auto px-20 py-24 flex flex-col lg:flex-row items-center gap-16 relative">
+  <div class="lg:w-1/2 space-y-10 ">
+    <h2 class="text-white text-5xl lg:text-7xl font-bold leading-tight tracking-tighter uppercase">
+      The works <br> closest to <br> my heart
+    </h2>
+        <button class="bg-[#E3FF6A] text-black px-10 py-4 rounded-full font-bold text-xl">
+      SHOW MY PROJECTS
+    </button>
+  </div>
+
+
+
+  <div class="lg:w-1/2 flex gap-4 h-125 w-full">
+    <div class="relative group flex-3 overflow-hidden rounded-[2.5rem] transition-all duration-700">
+      <img src="https://cdn.prod.website-files.com/6667e16e76bdd11f17dcf374/69645d4f6b592d6f1d4a4342_bourke.webp" alt="oil Company" class="h-full w-full object-cover" />
+      <div class="absolute bottom-8 left-8">
+        <p class="text-white font-bold text-2xl drop-shadow-md">Link <br>website</p>
+      </div>
+    </div>
+
+    <div class="relative group flex-1 overflow-hidden rounded-[2.5rem]">
+      <img src="https://images.adsttc.com/media/images/6390/9dbd/4a44/6025/7dc5/b5b7/large_jpg/iqon-big_15.jpg?1670421960" alt="tower" class="h-full w-full object-cover" />
+    </div>
+
+    <div class="relative group flex-1 overflow-hidden rounded-[2.5rem]">
+      <img src="https://linktr.ee/_gatsby/image/0bb5555d98949249a98c9502578b289f/46259e2168e0b85392d0eb83802428ad/platypus.png?eu=535cd3fef3b35a2abd4af306494a301f33575ebb14fef224ebcfb4ded7af5d845e7a872ebe5a26b830c1fcb12d3375cb635912587cb9b84b0b514f8531a14eb46f09210ad6e10167a2b58b0ebfdd5a3da0fa97c47c0f769af5794c1dd26a78e6d27c6102dd598f46aac39303329b1009b4f1e2f49732fe49ead45a441046ff87733aac286df5f9b8f42863d50a50dd3c8398ae8a2c34622066dc&a=w%3D786%26h%3D1704%26fm%3Dpng%26q%3D75&cd=613704728d4c00fceb265fc94b30267f" alt="linktree" class="h-full w-full object-cover" />
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="max-w-5xl mx-auto px-6 py-24">
+  <div class="bg-white rounded-[2.5rem] lg:rounded-[4rem] px-8 py-12 lg:p-20 flex flex-col items-center">
+    
+    <h2 class="text-black text-3xl lg:text-6xl font-extrabold mb-12 text-center">
+      LET'S HAVE A CHAT
+    </h2>
+
+    <form action="#" method="POST" class="w-full max-w-2xl space-y-5">
+      
+      <div>
+        <input type="text" placeholder="YOUR NAME" 
+          class="w-full bg-[#F3F4F6] border-none rounded-2xl lg:rounded-3xl p-6 text-[10px] font-bold text-gray-700 placeholder:text-gray-400">
+      </div>
+
+      <div>
+        <input type="email" placeholder="EMAIL ADDRESS" 
+          class="w-full bg-[#F3F4F6] border-none rounded-2xl lg:rounded-3xl p-6 text-[10px] font-bold text-gray-700 placeholder:text-gray-400">
+      </div>
+
+      <div>
+        <textarea placeholder="CHAT HERE" rows="5" 
+          class="w-full bg-[#F3F4F6] border-none rounded-2xl lg:rounded-3xl p-6 text-[10px] font-bold text-gray-700 placeholder:text-gray-400"></textarea>
+      </div>
+
+      <button type="submit" 
+        class="w-full bg-[#E3FF6A] text-black font-black py-6 rounded-full text-m uppercase hover:scale-[1.05]">
+        SUBMIT HERE
+      </button>
+
+    </form>
+  </div>
+</section>
+    </main>
+
+<footer class="flex flex-col items-center gap-6 border-t border-white/5 px-6 py-12 lg:flex-row lg:justify-between lg:px-24">
+  
+  <p class="text-[#8892B0] text-xl font-bold uppercase">
+    &copy; 2026 Samuel C
+  </p>
+
+  <div class="flex items-center gap-6">
+    <a href="#" class="opacity-60 hover:opacity-100">
+      <img src="mobile/icon-facebook.svg" alt="facebook" class="w-5 h-5" />
+    </a>
+    <a href="#" class="opacity-60 hover:opacity-100">
+      <img src="mobile/icon-instagram.svg" alt="instagram" class="w-5 h-5" />
+    </a>
+  </div>
+
+</footer>

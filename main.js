@@ -9,9 +9,9 @@ const sections = [
     ],
     buttonText: "SHOW MY PROJECTS",
     imagenes: [
-      { src: "/mobile/traje.jpeg", alt: "Samuel 1", clases: "hidden lg:block absolute top-32 left-[15%] w-36 -rotate-12 rounded-2xl drop-shadow-[-20px_-20px_20px_white]" },
-      { src: "/mobile/montaña.jpeg", alt: "Samuel 2", clases: "hidden lg:block absolute bottom-32 left-[8%] w-64 rotate-[8deg] z-20 rounded-3xl drop-shadow-[0px_0px_30px_white]" },
-      { src: "/mobile/fogata.jpeg", alt: "Samuel 3", clases: "hidden lg:block absolute top-1/2 right-[3%] w-72 -translate-y-1/2 rotate-[-15deg] rounded-3xl drop-shadow-[-20px_-20px_20px_white] opacity-80" }
+      { src: "mobile/traje.jpeg", alt: "Samuel 1", clases: "hidden lg:block absolute top-32 left-[15%] w-36 -rotate-12 rounded-2xl drop-shadow-[-20px_-20px_20px_white]" },
+      { src: "mobile/montaña.jpeg", alt: "Samuel 2", clases: "hidden lg:block absolute bottom-32 left-[8%] w-64 rotate-[8deg] z-20 rounded-3xl drop-shadow-[0px_0px_30px_white]" },
+      { src: "mobile/fogata.jpeg", alt: "Samuel 3", clases: "hidden lg:block absolute top-1/2 right-[3%] w-72 -translate-y-1/2 rotate-[-15deg] rounded-3xl drop-shadow-[-20px_-20px_20px_white] opacity-80" }
     ]
   },
   {

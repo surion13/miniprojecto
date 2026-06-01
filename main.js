@@ -19,14 +19,14 @@ const sections = [
     titulo: "MY SKILLS",
     experiencia: 4,
     cards: [
-      { src: "/mobile/html-svgrepo-com.svg", nombre: "HTML" },
-      { src: "/mobile/css-3-svgrepo-com.svg", nombre: "CSS" },
-      { src: "/mobile/javascript-svgrepo-com.svg", nombre: "JavaScript" },
-      { src: "/mobile/react-svgrepo-com.svg", nombre: "React" },
-      { src: "/mobile/next-js-svgrepo-com.svg", nombre: "Next.js" },
-      { src: "/mobile/node-js-svgrepo-com.svg", nombre: "Node.js" },
-      { src: "/mobile/tailwind-svgrepo-com.svg", nombre: "Tailwind" },
-      { src: "/mobile/mongodb-logo-svgrepo-com.svg", nombre: "MongoDB" },
+      { src: "mobile/html-svgrepo-com.svg", nombre: "HTML" },
+      { src: "mobile/css-3-svgrepo-com.svg", nombre: "CSS" },
+      { src: "mobile/javascript-svgrepo-com.svg", nombre: "JavaScript" },
+      { src: "mobile/react-svgrepo-com.svg", nombre: "React" },
+      { src: "mobile/next-js-svgrepo-com.svg", nombre: "Next.js" },
+      { src: "mobile/node-js-svgrepo-com.svg", nombre: "Node.js" },
+      { src: "mobile/tailwind-svgrepo-com.svg", nombre: "Tailwind" },
+      { src: "mobile/mongodb-logo-svgrepo-com.svg", nombre: "MongoDB" },
     ]
   },
   {

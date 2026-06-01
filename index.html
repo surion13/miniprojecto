@@ -1,23 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark" id="todo">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miniprojecto</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" type="module"></script>
   </head>
-  <body class="bg-[#0D1117] text-white">
+  <body  class="bg-white text-black dark:bg-[#0D1117] dark:text-white">
 <header class="relative flex h-24 items-center justify-between px-6 lg:px-12 ">
   
   <div class="z-10">
     <img src="mobile/atom-svgrepo-com.svg" class="w-8" />
   </div>
 
-  <nav class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 text-[10px] font-bold tracking-[0.2em] text-[#8892B0]">
-    <a href="#infografia" class="hover:text-white">ABOUT ME</a>
-    <a href="#habilidades" class="hover:text-white">SKILLS</a>
-    <a href="#projects" class="hover:text-white">PROJECTS</a>
+  <nav class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 text-[10px] font-bold tracking-[0.2em] text-slate-500 dark:text-[#8892B0]
+">
+    <a href="#infografia" class="hover:text-black dark:hover:text-white
+">ABOUT ME</a>
+    <a href="#habilidades" class="hover:text-black dark:hover:text-white
+">SKILLS</a>
+    <a href="#projects" class="hover:text-black dark:hover:text-white
+">PROJECTS</a>
   </nav>
 
   <div class="hidden lg:flex z-10">
@@ -34,13 +39,14 @@
     <main>
       <!-- Hero section-->
       <section
-        class="relative min-h-screen bg-linear-to-t from-[#1E293B] to-[#0D1117] overflow-hidden px-6 pt-10 pb-20 lg:flex-col lg:items-center lg:justify-center"
+        class="relative min-h-screen dark:bg-linear-to-t dark:from-[#1E293B] dark:to-[#0D1117] bg-linear-to-t from-purple-500 to-white
+ overflow-hidden px-6 pt-10 pb-20 lg:flex-col lg:items-center lg:justify-center"
       >
         <div class="flex flex-col items-center text-center">
           <h1
             class="max-w-85 text-4xl font-bold leading-tight lg:max-w-3xl lg:text-7xl"
           >
-            I'm <span class="text-[#E3FF6A] italic">Samuel Cardenas</span>
+            I'm <span class="dark:text-[#E3FF6A] italic text-purple-500 ">Samuel Cardenas</span>
             <span
               class="inline-block rounded-2xl border border-[#2B3650] px-4 py-2"
               >Front-End</span
@@ -55,7 +61,7 @@
             alt="me"
             class="w-75 object-cover object-top drop-shadow-[0px_0px_100px_#E3FF6A] lg:w-100"
           />
-          <button class="absolute bottom-10 left-1/2 -translate-x-1/2 rounded-full bg-[#E3FF6A] px-7 py-3 font-bold text-black whitespace-nowrap lg:px-8 lg:py-4 lg:text-3xl">
+          <button class="absolute bottom-10 left-1/2 -translate-x-1/2 rounded-full dark:bg-[#E3FF6A] bg-purple-500 px-7 py-3 font-bold text-black whitespace-nowrap lg:px-8 lg:py-4 lg:text-3xl">
     MY PROJECTS
   </button>
         </div>
@@ -63,7 +69,7 @@
 
         <!-- LEFT CARD -->
         <div
-          class="hidden lg:block absolute left-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 -rotate-5 text-2xl"
+          class="hidden lg:block absolute left-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 -rotate-5 text-2xl text-white"
         >
           <h2>Client Review From Australia <span>5.0</span></h2>
           <p>
@@ -74,7 +80,7 @@
 
         <!-- RIGHT CARD -->
         <div
-          class="hidden lg:block absolute right-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 rotate-5 text-2xl"
+          class="hidden lg:block absolute right-0 top-1/2 w-80 -translate-y-1/2 rounded-2xl bg-[#1E293B]/80 p-6 backdrop-blur-md border border-white/10 rotate-5 text-2xl text-white"
         >
           <h2>MY EXPERTISE</h2>
           <div>
@@ -90,126 +96,26 @@
       </section>
 
       <!-- WHO AM I -->
-   <section id="infografia" class="relative min-h-screen flex flex-col items-center justify-center bg-[#0D1117] px-6 py-24 overflow-hidden">
   
-  <div class="hidden lg:block absolute top-32 left-[15%] w-36 -rotate-12">
-    <img src="/mobile/traje.jpeg" alt="Samuel 1" class="rounded-2xl drop-shadow-[-20px_-20px_20px_white]" />
-  </div>
+      <div id="who-am-i"></div>
 
-  <div class="hidden lg:block absolute bottom-32 left-[8%] w-64 rotate-[8deg] z-20">
-    <img src="/mobile/montaña.jpeg" alt="Samuel 2" class="rounded-3xl  drop-shadow-[0px_0px_30px_white]" />
-  </div>
-
-  <div class="hidden lg:block absolute top-1/2 right-[3%] w-72 -translate-y-1/2 rotate-[-15deg]">
-    <img src="/mobile/fogata.jpeg" alt="Samuel 3" class="rounded-3xl  drop-shadow-[-20px_-20px_20px_white] opacity-80" />
-  </div>
-
-  <div class="relative z-10 flex flex-col items-center text-center max-w-3xl space-y-10">
-    <h2 class="text-[#E3FF6A] text-6xl lg:text-8xl font-bold tracking-tighter">WHO AM I ?</h2>
-    
-    <div class="space-y-6 text-gray-400 text-lg lg:text-xl font-medium leading-relaxed px-4">
-      <p>I Am a full-stack website developer specialized in ReactJS. Plus, I also know some WordPress front-end development with Elementor and WooCommerce.</p>
-      <p>Programming is my passion, that's the reason I am working at the time of my academic career.</p>
-      <p>Additionally, I like to play PC games and read story-type books in my leisure time which is kinda fun and relaxing!</p>
-    </div>
-
-    <button class="bg-[#E3FF6A] text-black px-12 py-4 rounded-full font-extrabold tracking-[0.2em] transition-all hover:scale-110 text-xl">
-      SHOW MY PROJECTS
-    </button>
-  </div>
-
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-125 bg-[#E3FF6A]/5 blur-[120px] rounded-full z-0"></div>
-
-</section>
 
       <!-- MY SKILLS -->
- <section id="habilidades" class="max-w-6xl mx-auto px-6 py-24">
-  <h2 class="text-center text-[#E3FF6A] text-5xl font-bold mb-16 tracking-tighter">MY SKILLS</h2>
+      <div id="habilidades"></div>
 
-  <div class="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-6">
-    
-    <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/html-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-    <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/css-3-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/javascript-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/react-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="col-span-2 lg:col-span-1 lg:row-span-2 flex flex-col items-center justify-center rounded-3xl bg-[#1E293B] border border-white/10 p-8 text-center shadow-2xl">
-      <span class="text-7xl lg:text-8xl font-bold text-white">4</span>
-      <p class="text-[#8892B0] text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] mt-4 leading-tight">
-        Years<br>Experience<br>Working
-      </p>
-      <button class="mt-8 rounded-full bg-[#E3FF6A] px-6 py-2 text-[10px] font-bold text-black transition-transform hover:scale-105">
-        DOWNLOAD MY CV
-      </button>
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/next-js-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/node-js-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/tailwind-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-        <div class="flex items-center justify-center aspect-square rounded-3xl bg-[#1E293B]/40 border border-white/5 hover:bg-[#1E293B] transition-all group">
-      <img src="/mobile/mongodb-logo-svgrepo-com.svg" class="w-12 lg:w-16  group-hover:grayscale-0 transition-all duration-500" />
-    </div>
-
-</section>
 
 <!-- ADDITIONAL SKILLS -->
+      <div id="additional-skills"></div>
 
-<div class="max-w-6xl mx-auto px-6 pb-24">
-  <div class="rounded-4xl border border-white/5 bg-[#1E293B]/20 p-10 backdrop-blur-sm">
-    
-    <h3 class="text-center text-[#E3FF6A] text-[10px] lg:text-xs font-bold tracking-[0.4em] uppercase mb-12">
-      Additional Skills
-    </h3>
-
-    <div class="flex flex-wrap items-center justify-center gap-10 lg:gap-20">
-      
-      <img src="mobile/bootstrap-svgrepo-com.svg" alt="Bootstrap" class="h-7 lg:h-9 w-auto" />
-      
-      <img src="mobile/axios.svg" alt="Axios" class="h-5 lg:h-6 w-auto" />
-      
-      <img src="mobile/redux-svgrepo-com.svg" alt="Redux" class="h-7 lg:h-9 w-auto" />
-      
-      <img src="mobile/material-ui-svgrepo-com.svg" alt="Material UI" class="h-7 lg:h-9 w-auto" />
-      
-      <img src="mobile/firebase-svgrepo-com.svg" alt="Firebase" class="h-7 lg:h-9 w-auto" />
-      
-      <img src="mobile/wordpress-svgrepo-com.svg" alt="WordPress" class="h-7 lg:h-9 w-auto" />
-
-      <img src="mobile/framer-motion.svg" alt="Framer Motion" class="h-7 lg:h-9 w-auto" />
-
-
-    </div>
-  </div>
-</div>
 
 <!-- THEWORKS CLOSEST TO MY HEART -->
 
   <section id="projects" class="max-w-7xl mx-auto px-20 py-24 flex flex-col lg:flex-row items-center gap-16 relative">
   <div class="lg:w-1/2 space-y-10 ">
-    <h2 class="text-white text-5xl lg:text-7xl font-bold leading-tight tracking-tighter uppercase">
+    <h2 class="dark:text-white text-black text-5xl lg:text-7xl font-bold leading-tight tracking-tighter uppercase">
       The works <br> closest to <br> my heart
     </h2>
-        <button class="bg-[#E3FF6A] text-black px-10 py-4 rounded-full font-bold text-xl">
+        <button class="dark:bg-[#E3FF6A] bg-purple-500 text-black px-10 py-4 rounded-full font-bold text-xl">
       SHOW MY PROJECTS
     </button>
   </div>
@@ -234,14 +140,14 @@
 
   <!-- FORM -->
 
-<section id="contact" class="max-w-5xl mx-auto px-6 py-24">
-  <div class="bg-white rounded-[2.5rem] lg:rounded-[4rem] px-8 py-12 lg:p-20 flex flex-col items-center">
+<section id="contact" class="max-w-5xl mx-auto px-6 py-24 ">
+  <div class="bg-white rounded-[2.5rem] lg:rounded-[4rem] px-8 py-12 lg:p-20 flex flex-col items-center border-[#0D1117] border">
     
     <h2 class="text-black text-3xl lg:text-6xl font-extrabold mb-12 text-center">
       LET'S HAVE A CHAT
     </h2>
 
-    <form action="#" method="POST" class="w-full max-w-2xl space-y-5">
+    <form action="#" method="POST" class="w-full max-w-2xl space-y-5 ">
       
       <div>
         <input type="text" placeholder="YOUR NAME" 
@@ -259,18 +165,33 @@
       </div>
 
       <button type="submit" 
-        class="w-full bg-[#E3FF6A] text-black font-black py-6 rounded-full text-m uppercase hover:scale-[1.05]">
+        class="w-full dark:bg-[#E3FF6A] bg-purple-500 text-black font-black py-6 rounded-full text-m uppercase hover:scale-[1.05]">
         SUBMIT HERE
       </button>
 
     </form>
   </div>
 </section>
+
+      <!-- From Uiverse.io by Javierrocadev --> 
+<div class="flex justify-end py-4 px-6">
+  <label class="relative inline-flex items-center cursor-pointer">
+    <input id="btndark" class="sr-only peer" value="" type="checkbox">
+      <div class="peer ring-2 ring-gray-900 bg-linear-to-r from-rose-400 to-red-900 rounded-full 
+      outline-none duration-300 after:duration-500 w-20 h-8 shadow-inner peer-checked:bg-linear-to-r
+        peer-checked:from-emerald-500 peer-checked:to-emerald-900 shadow-gray-900 peer-focus:outline-none peer-focus:ring-4
+        peer-focus:ring-gray-900 after:content-[''] after:rounded-full after:absolute after:outline-none after:h-12 after:w-12
+        after:bg-gray-50 after:-top-2 after:-left-2 after:flex after:justify-center after:items-center after:border-4
+        after:border-gray-900 peer-checked:after:translate-x-14">
+    </div>
+  </label>
+</div>
     </main>
 
-<footer class="flex flex-col items-center gap-6 border-t border-white/5 px-6 py-12 lg:flex-row lg:justify-between lg:px-24">
+<footer class="flex flex-col items-center gap-6 border-t border-white/5 px-6 py-12 lg:flex-row lg:justify-between lg:px-24 bg-gray-400 dark:bg-[#0D1117]">
   
-  <p class="text-[#8892B0] text-xl font-bold uppercase">
+  <p class="text-black dark:text-[#8892B0]
+ text-xl font-bold uppercase">
     &copy; 2026 Samuel C
   </p>
 
